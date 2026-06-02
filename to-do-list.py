@@ -23,10 +23,11 @@ while True:
 
     if remove_task in to_do_list:
       to_do_list.remove(remove_task)
-      print("The task '{remove_task}' has been removed.")
+      print(f"The task '{remove_task}' has been removed.")
       
     else:
       print(f"The task '{remove_task}' was not found.")
+    
 
 
   elif user_needs == 'exit':
