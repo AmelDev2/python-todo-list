@@ -14,9 +14,14 @@ while True:
     print(f"the tasks {task} added")
 
   elif user_needs == 'view':
+    if not to_do_list:
+        print("No tasks found.")
+    else:
+        for i, task in enumerate(to_do_list, 1):
+            print(f"{i}- {task}")
+    
 
-    for i, task in enumerate(to_do_list, 1):
-      print(f"{i}- {task}")
+  
 
   elif user_needs == 'remove':
     remove_task = input("enter the task you wonated to remove it :")  
